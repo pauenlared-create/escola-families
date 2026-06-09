@@ -96,16 +96,30 @@ export default function Home() {
     </h2>
   </div>
 </div>
-           <p className="mt-4 text-2xl font-bold leading-tight text-[#4B3A59]">
-  Entén què hi ha darrere del seu comportament.
+          <p className="mt-4 text-2xl font-bold leading-tight text-[#4B3A59]">
+  Perquè educar avui no és una tasca senzilla.
+</p>
+
+<p className="mt-4 text-xl font-semibold leading-8 text-[#4B3A59]">
+  FamilyAri t'acompanya en el dia a dia amb l'educació dels teus fills i filles.
+</p>
+
+
+<p className="mt-4 text-lg leading-8 text-[#6B5E72]">
+  FamilyAri t'ajuda a entendre què hi ha darrere del seu comportament
+  i a trobar respostes adaptades a la realitat de la teva família.
 </p>
 
 <p className="mt-4 text-lg leading-8 text-[#6B5E72]">
-  FamilyAri t’acompanya en el dia a dia amb l'educació dels teus fills i filles. És una eina per comprendre millor les emocions, les conductes i el desenvolupament de cada infant o adolescent T'ajuda a millorar la comunicació, establir límits o gestionar aspectes del dia a dia com poden ser les pantalles, la convivència i els reptes propis de cada etapa.
+  És una eina per comprendre millor les emocions, les conductes i el desenvolupament de cada infant o adolescent. T'ajuda a millorar la comunicació, establir límits o gestionar aspectes del dia a dia com poden ser les pantalles, la convivència i els reptes propis de cada etapa.
 </p>
 
 <p className="mt-4 text-lg leading-8 text-[#6B5E72]">
-  FamilyAri aprèn del context de cada família i evoluciona aprenent les coses que funcionen i les que no per a cada individu, perquè cadascú és únic i irrepetible. És una eina fàcil de fer servir que posa el potencial de la IA al servei de totes les famílies. Les seves respostes es fonamenten en els darrers avenços en psicologia del desenvolupament, neurociència i amb estratégies enmarcades en la discilplina positiva.
+ FamilyAri aprèn del context de cada família i evoluciona a mesura que coneix millor allò que funciona i allò que no funciona per a cada infant, adolescent o família, perquè cada realitat és única. 
+</p>
+
+<p className="mt-4 text-lg leading-8 text-[#6B5E72]">
+ És una eina fàcil de fer servir que posa el potencial de la IA al servei de totes les famílies. Les seves respostes es fonamenten en els darrers avenços en psicologia del desenvolupament, neurociència i amb estratégies enmarcades en la discilplina positiva.
 </p>
 
 <p className="mt-6 text-sm font-semibold text-[#4B3A59]">
