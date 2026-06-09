@@ -104,14 +104,11 @@ export default function Home() {
 </p>
 
 <p className="mt-4 text-lg leading-8 text-[#6B5E72]">
-  FamilyAri t’acompanya en el dia a dia per comprendre millor les
-  emocions, els límits, les pantalles, la convivència i els reptes
-  propis de cada etapa.
+  FamilyAri t’acompanya en el dia a dia amb l'educació dels teus fills i filles. És una eina per comprendre millor les emocions, les conductes i el desenvolupament de cada infant o adolescent T'ajuda a millorar la comunicació, establir límits o gestionar aspectes del dia a dia com poden ser les pantalles, la convivència i els reptes propis de cada etapa.
 </p>
 
 <p className="mt-4 text-lg leading-8 text-[#6B5E72]">
-  No ofereix receptes universals: intenta comprendre cada família
-  abans d’acompanyar-la.
+  FamilyAri aprèn del context de cada família i evoluciona aprenent les coses que funcionen i les que no per a cada individu, perquè cadascú és únic i irrepetible. És una eina fàcil de fer servir que posa el potencial de la IA al servei de totes les famílies. Les seves respostes es fonamenten en els darrers avenços en psicologia del desenvolupament, neurociència i amb estratégies enmarcades en la discilplina positiva.
 </p>
 
 <p className="mt-6 text-sm font-semibold text-[#4B3A59]">
@@ -163,82 +160,104 @@ export default function Home() {
       Families+1: converses que deixen empremta.
     </h2>
 
-    <div className="mt-6 max-w-4xl space-y-5 text-lg leading-8 text-[#6B5E72]">
-      <p>
-        El +1 representa l'arribada del primer mòbil.
-      </p>
+    <p className="mt-6 text-lg leading-8 text-[#6B5E72]">
+  Families+1 neix per acompanyar les famílies en un dels moments de canvi
+  més importants de la infància i l'adolescència: l'arribada del primer
+  dispositiu mòbil.
+</p>
 
-      <p>
-        Families+1 neix per acompanyar les famílies en aquest moment de canvi:
-        tant si el primer dispositiu encara no ha arribat com si ja forma part
-        del dia a dia familiar i s'ha convertit en una font de discussions.
-      </p>
+<p className="mt-4 text-lg leading-8 text-[#6B5E72]">
+  Quan apareix el primer mòbil, també apareixen noves preguntes sobre
+  l'autonomia, la confiança, els límits, les xarxes socials, els videojocs
+  o el temps de pantalla. Sovint, aquestes preguntes acaben generant
+  tensions que afecten tota la família.
+</p>
 
-      <p>
-        Quan arriba el mòbil, apareixen noves preguntes sobre l'autonomia, la
-        confiança, els límits, les xarxes socials, els videojocs o el temps de
-        pantalla. I sovint aquestes preguntes afecten tota la família.
-      </p>
+<p className="mt-4 text-lg leading-8 text-[#6B5E72]">
+  Els joves necessiten comprendre que la sobreexposició a les pantalles i
+  a les xarxes socials pot tenir conseqüències en el seu benestar, les
+  seves relacions o el seu descans. Al mateix temps, les famílies
+  necessiten entendre que aquest primer dispositiu també respon a
+  necessitats legítimes de socialització, autonomia i pertinença al grup.
+</p>
 
-      <p>
-        Els infants i adolescents necessiten comprendre que la sobreexposició a
-        les pantalles i les xarxes socials pot tenir efectes sobre el seu
-        benestar, les seves relacions, el seu descans o la seva autoestima.
-      </p>
+<p className="mt-4 text-lg leading-8 text-[#6B5E72]">
+  Per això, Families+1 crea espais de conversa entre alumnes i famílies
+  dins dels centres educatius. Treballem per comprendre les necessitats i
+  preocupacions de cada part, afavorir el diàleg i construir acords des
+  del respecte, l'empatia i la corresponsabilitat.
+</p>
 
-      <p>
-        Al mateix temps, les famílies necessiten comprendre que el mòbil també
-        respon a necessitats legítimes de socialització, autonomia i pertinença
-        al grup, especialment en aquesta etapa de la vida.
-      </p>
+<p className="mt-4 text-lg leading-8 text-[#6B5E72]">
+  Creiem que quan cada membre de la família comprèn millor el punt de vista
+  de l'altre, resulta més fàcil establir límits, prendre decisions
+  compartides i enfortir la convivència familiar.
+</p>
+    
 
-      <p>
-        Quan cada part pot entendre millor les preocupacions i les necessitats
-        de l'altra, és més fàcil construir acords, establir límits des del
-        respecte i prendre decisions compartides que afavoreixin el benestar de
-        tota la família.
-      </p>
-    </div>
+   <div className="mt-12 grid gap-8 md:grid-cols-3">
 
-    <div className="mt-10 grid gap-5 md:grid-cols-3">
-      <div className="rounded-[1.5rem] bg-white p-6 shadow-sm">
-        <div className="text-3xl">🏫</div>
-        <h3 className="mt-4 text-xl font-bold">1. Sessió amb l'alumnat</h3>
-        <p className="mt-3 text-[#6B5E72]">
-          Explorem què representa el mòbil per als infants i adolescents, quines
-          necessitats hi ha al darrere i quins riscos cal conèixer.
-        </p>
-      </div>
+  <div className="overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
+    <img
+      src="/families1-infants.jpg"
+      alt="Escoltem els infants"
+      className="h-64 w-full object-cover"
+    />
 
-      <div className="rounded-[1.5rem] bg-white p-6 shadow-sm">
-        <div className="text-3xl">👨‍👩‍👧</div>
-        <h3 className="mt-4 text-xl font-bold">2. Sessió amb les famílies</h3>
-        <p className="mt-3 text-[#6B5E72]">
-          Compartim preocupacions, dubtes i criteris per acompanyar l'ús del
-          mòbil sense caure només en la prohibició, el control o la permissivitat.
-        </p>
-        <p className="mt-3 text-sm leading-6 text-[#8B6FA3]">
-          Es pot realitzar presencialment o en format online, habitualment fora
-          de l'horari escolar.
-        </p>
-      </div>
+    <div className="p-6">
+      <h3 className="text-2xl font-bold text-[#7B5FA3]">
+        1. Escoltem els infants
+      </h3>
 
-      <div className="rounded-[1.5rem] bg-white p-6 shadow-sm">
-        <div className="text-3xl">💬</div>
-        <h3 className="mt-4 text-xl font-bold">3. Sessió conjunta</h3>
-        <p className="mt-3 text-[#6B5E72]">
-          Creem un espai de trobada per escoltar les dues mirades, generar
-          comprensió mútua i facilitar acords familiars més conscients.
-        </p>
-      </div>
-    </div>
-
-    <div className="mt-10 rounded-[2rem] bg-white p-8 text-center shadow-sm">
-      <p className="text-xl font-semibold leading-8 text-[#4B3A59]">
-        Perquè sovint el problema no és només el mòbil. És tot allò que el mòbil
-        posa damunt la taula.
+      <p className="mt-4 text-[#6B5E72]">
+        Conversem amb infants i adolescents per entendre com viuen
+        l'arribada del primer mòbil, què els il·lusiona, què els preocupa
+        i quines necessitats hi ha darrere de la seva demanda.
       </p>
     </div>
+  </div>
+
+  <div className="overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
+    <img
+      src="/families1-families.jpg"
+      alt="Escoltem les famílies"
+      className="h-64 w-full object-cover"
+    />
+
+    <div className="p-6">
+      <h3 className="text-2xl font-bold text-[#4E9A61]">
+        2. Escoltem les famílies
+      </h3>
+
+      <p className="mt-4 text-[#6B5E72]">
+        Conversem amb les famílies sobre les seves inquietuds, els límits,
+        l'autonomia, la seguretat digital, la convivència i els canvis que
+        sovint apareixen amb l'arribada del primer mòbil.
+      </p>
+    </div>
+  </div>
+
+  <div className="overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
+    <img
+      src="/families1-trobada.jpg"
+      alt="Ens trobem"
+      className="h-64 w-full object-cover"
+    />
+
+    <div className="p-6">
+      <h3 className="text-2xl font-bold text-[#D98A2B]">
+        3. Ens trobem
+      </h3>
+
+      <p className="mt-4 text-[#6B5E72]">
+        Ens trobem per comprendre millor les necessitats i preocupacions de
+        l'altra part, afavorir el diàleg i construir acords que ajudin a
+        cuidar la convivència familiar.
+      </p>
+    </div>
+  </div>
+
+</div>
   </div>
 </section>
 
