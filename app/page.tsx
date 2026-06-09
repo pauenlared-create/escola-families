@@ -16,10 +16,7 @@ export default function Home() {
             <a href="#families-plus">Families+1</a>
             <a href="#projecte">Sobre el projecte</a>
             <a href="#contacte">Contacte</a>
-            <button className="rounded-full bg-white px-4 py-2 shadow-sm">
-              CA | ES
-            </button>
-          </nav>
+                      </nav>
         </header>
 
         <div className="grid gap-12 pt-16 pb-20 md:grid-cols-2">
