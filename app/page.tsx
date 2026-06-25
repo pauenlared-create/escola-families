@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Head from "next/head";
 
 // ─── Traduccions ────────────────────────────────────────────────────────────
 
@@ -253,33 +252,53 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
   const [formSent, setFormSent] = useState(false);
+  const [formSending, setFormSending] = useState(false);
+  const [formError, setFormError] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
 
   const t = translations[lang];
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí conecta amb el teu backend / Formspree / EmailJS
-    setFormSent(true);
+    setFormSending(true);
+    setFormError(false);
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/hola@escoladefamilies.cat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+          _subject: "Nou missatge des de escoladefamilies.cat",
+          _template: "table",
+        }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setFormSent(true);
+      setFormState({ name: "", email: "", message: "" });
+    } catch {
+      setFormError(true);
+    } finally {
+      setFormSending(false);
+    }
+  };
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("hola@escoladefamilies.cat");
+      setEmailCopied(true);
+      setTimeout(() => setEmailCopied(false), 2000);
+    } catch {
+      // El navegador no permet copiar automàticament; l'usuari sempre pot fer-ho a mà
+    }
   };
 
   return (
     <>
-      <Head>
-        <title>Escola de Famílies — Comprendre per connectar</title>
-        <meta
-          name="description"
-          content="Escola de Famílies crea eines i espais per enfortir el vincle entre pares, mares, fills i filles. Descobreix FamilyAri i el programa Families+1."
-        />
-        <meta property="og:title" content="Escola de Famílies — Comprendre per connectar" />
-        <meta
-          property="og:description"
-          content="FamilyAri i Families+1: eines per comprendre i connectar amb els teus fills i filles."
-        />
-        <meta property="og:image" content="/hero-familia-sofa.jpg" />
-        <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
       <main className="min-h-screen bg-[#FAF7F2] text-[#2F2633]">
@@ -455,10 +474,10 @@ export default function Home() {
               <p className="mt-6 text-sm font-semibold text-[#4B3A59]">{t.familyari.available}</p>
 
               <div className="mt-4 flex flex-wrap items-center gap-3">
-                <a href="[apps.apple.com](https://apps.apple.com/es/app/familyari/id6771475913)" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/es/app/familyari/id6771475913" target="_blank" rel="noopener noreferrer">
                   <Image src="/app-store-badge.svg" alt={t.familyari.ctaAppStore} width={160} height={44} className="h-11 w-auto" />
                 </a>
-                <a href="[play.google.com](https://play.google.com/store/apps/details?id=com.familyari.app&pcampaignid=web_share)" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=com.familyari.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
                   <Image src="/google-play-badge.png" alt={t.familyari.ctaGooglePlay} width={160} height={44} className="h-11 w-auto" />
                 </a>
               </div>
@@ -669,23 +688,43 @@ export default function Home() {
                 />
                 <textarea
                   rows={4}
+                  required
                   placeholder={t.contacte.messagePlaceholder}
                   value={formState.message}
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                   className="w-full rounded-xl bg-white/20 px-4 py-3 text-white placeholder-white/60 outline-none focus:bg-white/30 transition-colors resize-none"
                 />
+                {formError && (
+                  <p className="text-sm text-white bg-red-500/40 rounded-xl px-4 py-3">
+                    {lang === "ca"
+                      ? "Hi ha hagut un problema en enviar el missatge. Torna-ho a provar o escriu-nos directament a hola@escoladefamilies.cat."
+                      : "Ha habido un problema al enviar el mensaje. Inténtalo de nuevo o escríbenos directamente a hola@escoladefamilies.cat."}
+                  </p>
+                )}
                 <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
                   <button
                     type="submit"
-                    className="w-full rounded-full bg-white px-6 py-3 font-semibold text-[#4B3A59] hover:bg-white/90 transition-colors sm:w-auto"
+                    disabled={formSending}
+                    className="w-full rounded-full bg-white px-6 py-3 font-semibold text-[#4B3A59] hover:bg-white/90 transition-colors sm:w-auto disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    {t.contacte.submit}
+                    {formSending
+                      ? lang === "ca" ? "Enviant…" : "Enviando…"
+                      : t.contacte.submit}
                   </button>
                   <p className="text-sm text-white/70">
                     {t.contacte.or}{" "}
                     <a href="mailto:hola@escoladefamilies.cat" className="underline text-white">
                       hola@escoladefamilies.cat
                     </a>
+                    <button
+                      type="button"
+                      onClick={handleCopyEmail}
+                      className="ml-2 underline text-white/80 hover:text-white transition-colors"
+                    >
+                      {emailCopied
+                        ? lang === "ca" ? "Copiat!" : "¡Copiado!"
+                        : lang === "ca" ? "(copiar)" : "(copiar)"}
+                    </button>
                   </p>
                 </div>
               </form>
