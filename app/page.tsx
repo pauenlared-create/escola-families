@@ -28,11 +28,11 @@ const translations = {
       label: "Per al dia a dia",
       title: "FamilyAri",
       h3: "Perquè educar avui no és una tasca senzilla.",
-      lead: "FamilyAri t'acompanya, dia a dia, en l'educació dels teus fills i filles.",
-      p1: "T'ajuda a entendre què hi ha darrere del seu comportament i a trobar respostes adaptades a la realitat de la teva família.",
-      p2: "Et permet comprendre millor les emocions, les conductes i el desenvolupament de cada infant o adolescent, i millorar la comunicació, posar límits o gestionar reptes quotidians com les pantalles o la convivència.",
-      p3: "Aprèn del context de cada família i evoluciona a mesura que descobreix què funciona i què no per a cada infant o adolescent, perquè cada realitat és única.",
-      p4: "És fàcil de fer servir i posa el potencial de la IA al servei de totes les famílies. Les seves respostes es fonamenten en els darrers avenços en psicologia del desenvolupament i neurociència, i en estratègies de disciplina positiva.",
+      lead: "FamilyAri t'acompanya en el dia a dia amb l'educació dels teus fills i filles.",
+      p1: "FamilyAri t'ajuda a entendre què hi ha darrere del seu comportament i a trobar respostes adaptades a la realitat de la teva família.",
+      p2: "És una eina per comprendre millor les emocions, les conductes i el desenvolupament de cada infant o adolescent. T'ajuda a millorar la comunicació, establir límits o gestionar aspectes del dia a dia com poden ser les pantalles, la convivència i els reptes propis de cada etapa.",
+      p3: "FamilyAri aprèn del context de cada família i evoluciona a mesura que coneix millor allò que funciona i allò que no funciona per a cada infant, adolescent o família, perquè cada realitat és única.",
+      p4: "És una eina fàcil de fer servir que posa el potencial de la IA al servei de totes les famílies. Les seves respostes es fonamenten en els darrers avenços en psicologia del desenvolupament, neurociència i amb estratègies emmarcades en la disciplina positiva.",
       available: "Disponible per a iPhone i Android.",
       ctaAppStore: "Descarrega-la a l'App Store",
       ctaGooglePlay: "Disponible a Google Play",
@@ -143,11 +143,11 @@ pDoc6: "D'aquesta preocupació, però també de la convicció que les famílies 
       label: "Para el día a día",
       title: "FamilyAri",
       h3: "Porque educar hoy no es una tarea sencilla.",
-      lead: "FamilyAri te acompaña, día a día, en la educación de tus hijos e hijas.",
-      p1: "Te ayuda a entender qué hay detrás de su comportamiento y a encontrar respuestas adaptadas a la realidad de tu familia.",
-      p2: "Te permite comprender mejor las emociones, las conductas y el desarrollo de cada niño o adolescente, y mejorar la comunicación, poner límites o gestionar retos cotidianos como las pantallas o la convivencia.",
-      p3: "Aprende del contexto de cada familia y evoluciona a medida que descubre qué funciona y qué no para cada niño o adolescente, porque cada realidad es única.",
-      p4: "Es fácil de usar y pone el potencial de la IA al servicio de todas las familias. Sus respuestas se basan en los últimos avances en psicología del desarrollo y neurociencia, y en estrategias de disciplina positiva.",
+      lead: "FamilyAri te acompaña en el día a día con la educación de tus hijos e hijas.",
+      p1: "FamilyAri te ayuda a entender qué hay detrás de su comportamiento y a encontrar respuestas adaptadas a la realidad de tu familia.",
+      p2: "Es una herramienta para comprender mejor las emociones, las conductas y el desarrollo de cada niño o adolescente. Te ayuda a mejorar la comunicación, establecer límites o gestionar aspectos del día a día como las pantallas, la convivencia y los retos propios de cada etapa.",
+      p3: "FamilyAri aprende del contexto de cada familia y evoluciona a medida que conoce mejor lo que funciona y lo que no funciona para cada niño, adolescente o familia, porque cada realidad es única.",
+      p4: "Es una herramienta fácil de usar que pone el potencial de la IA al servicio de todas las familias. Sus respuestas se fundamentan en los últimos avances en psicología del desarrollo, neurociencia y con estrategias enmarcadas en la disciplina positiva.",
       available: "Disponible para iPhone y Android.",
       ctaAppStore: "Descárgala en el App Store",
       ctaGooglePlay: "Disponible en Google Play",
@@ -494,11 +494,11 @@ export default function Home() {
 
             <div className="flex justify-center">
               <Image
-                src="/familyari-captura.png"
-                alt="Captura de FamilyAri"
-                width={300}
-                height={620}
-                className="max-h-[620px] w-auto rounded-[2rem] shadow-xl"
+                src={lang === "ca" ? "/familyari-promo-ca.png" : "/familyari-promo-es.png"}
+                alt={lang === "ca" ? "FamilyAri: entén què hi ha darrere del seu comportament" : "FamilyAri: entiende lo que hay detrás de su comportamiento"}
+                width={1080}
+                height={1920}
+                className="h-auto w-full max-w-[380px] rounded-[1.5rem] shadow-lg"
               />
             </div>
           </div>
