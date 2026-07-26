@@ -492,14 +492,29 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Mockup iPhone */}
             <div className="flex justify-center">
-              <Image
-                src="/familyari-captura.png"
-                alt="Captura de FamilyAri"
-                width={300}
-                height={620}
-                className="max-h-[620px] w-auto rounded-[2rem] shadow-xl"
-              />
+              <div className="relative w-[290px] shrink-0 rounded-[2.8rem] bg-[#1b1b1d] p-2.5 shadow-2xl ring-1 ring-black/10">
+                {/* Botons laterals */}
+                <div className="absolute -left-[3px] top-[104px] h-8 w-[3px] rounded-l bg-[#2c2c2e]" />
+                <div className="absolute -left-[3px] top-[150px] h-14 w-[3px] rounded-l bg-[#2c2c2e]" />
+                <div className="absolute -right-[3px] top-[140px] h-20 w-[3px] rounded-r bg-[#2c2c2e]" />
+
+                {/* Pantalla */}
+                <div className="relative overflow-hidden rounded-[2.2rem] bg-[#FAF7F2]">
+                  {/* Barra superior (safe area) amb illa dinàmica */}
+                  <div className="relative h-7">
+                    <div className="absolute left-1/2 top-[7px] h-[18px] w-[78px] -translate-x-1/2 rounded-full bg-black" />
+                  </div>
+                  <Image
+                    src="/familyari-home.jpg"
+                    alt="Pantalla d'inici de FamilyAri"
+                    width={303}
+                    height={564}
+                    className="block h-auto w-full"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
