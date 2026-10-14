@@ -4,12 +4,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
-import { translations, type Lang } from "@/lib/translations";
+import { translations } from "@/lib/translations";
+import { useLang } from "@/lib/useLang";
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("ca");
+  const [lang, setLang] = useLang("ca");
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
   const [formSent, setFormSent] = useState(false);
   const [formSending, setFormSending] = useState(false);

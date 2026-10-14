@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import { translations, type Lang } from "@/lib/translations";
+import { useLang } from "@/lib/useLang";
 
 type Recurs = {
-  file: string;
+  id: string;
+  files: Record<Lang, string>;
   title: string;
   meta: string;
   body: string;
@@ -34,27 +35,39 @@ function DownloadIcon() {
 }
 
 export default function RecursosPage() {
-  const [lang, setLang] = useState<Lang>("ca");
+  const [lang, setLang] = useLang("ca");
   const t = translations[lang];
   const r = t.recursos;
 
   const recursos: Recurs[] = [
     {
-      file: "/recursos/contracte-primer-mobil.pdf",
+      id: "contracte",
+      files: {
+        ca: "/recursos/contracte-primer-mobil.pdf",
+        es: "/recursos/contrato-primer-movil.pdf",
+      },
       title: r.card1Title,
       meta: r.card1Meta,
       body: r.card1Body,
       accent: "#7B5FA3",
     },
     {
-      file: "/recursos/el-nostre-acord.pdf",
+      id: "acord",
+      files: {
+        ca: "/recursos/el-nostre-acord.pdf",
+        es: "/recursos/nuestro-acuerdo.pdf",
+      },
       title: r.card2Title,
       meta: r.card2Meta,
       body: r.card2Body,
       accent: "#4E9A61",
     },
     {
-      file: "/recursos/preguntes-per-parlar-ne.pdf",
+      id: "preguntes",
+      files: {
+        ca: "/recursos/preguntes-per-parlar-ne.pdf",
+        es: "/recursos/preguntas-para-hablarlo.pdf",
+      },
       title: r.card3Title,
       meta: r.card3Meta,
       body: r.card3Body,
@@ -89,7 +102,7 @@ export default function RecursosPage() {
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
           {recursos.map((item) => (
             <article
-              key={item.file}
+              key={item.id}
               className="flex flex-col rounded-[1.5rem] bg-[#FAF7F2] p-7 shadow-sm"
             >
               <span
@@ -107,7 +120,7 @@ export default function RecursosPage() {
               </p>
               <p className="mt-4 flex-1 leading-7 text-[#6B5E72]">{item.body}</p>
               <a
-                href={item.file}
+                href={item.files[lang]}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-[#7B5FA3] px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-[#6A4E8F]"

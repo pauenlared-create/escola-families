@@ -1,16 +1,17 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
-import { translations, type Lang } from "@/lib/translations";
+import { translations } from "@/lib/translations";
+import { useLang } from "@/lib/useLang";
 
 const APP_STORE_URL = "https://apps.apple.com/es/app/familyari/id6771475913";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.familyari.app&pcampaignid=web_share";
 
 export default function FamilyAriPage() {
-  const [lang, setLang] = useState<Lang>("es");
+  const [lang, setLang] = useLang("es");
   const t = translations[lang];
   const f = t.familyari;
 
