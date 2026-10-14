@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Lang } from "@/lib/translations";
 
 export default function SiteHeader({
@@ -11,13 +12,14 @@ export default function SiteHeader({
 }: {
   lang: Lang;
   setLang: (lang: Lang) => void;
-  nav: { familyari: string; familiesPlus: string; projecte: string; contacte: string };
+  nav: { familyari: string; familiesPlus: string; recursos: string; projecte: string; contacte: string };
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
     { href: "/familyari", label: nav.familyari },
     { href: "/#families-plus", label: nav.familiesPlus },
+    { href: "/recursos", label: nav.recursos },
     { href: "/#projecte", label: nav.projecte },
     { href: "/#contacte", label: nav.contacte },
   ];
@@ -25,7 +27,7 @@ export default function SiteHeader({
   return (
     <header className="relative flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <a href="/">
+        <Link href="/">
           <Image
             src="/logo-escola-families.png"
             alt="Escola de Famílies"
@@ -34,7 +36,7 @@ export default function SiteHeader({
             className="h-16 w-auto"
             priority
           />
-        </a>
+        </Link>
       </div>
 
       {/* Desktop nav */}

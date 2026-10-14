@@ -2,6 +2,7 @@
 
 import { Fragment, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import { translations, type Lang } from "@/lib/translations";
 
@@ -155,9 +156,9 @@ export default function FamilyAriPage() {
         </div>
 
         <div className="mt-10 text-center">
-          <a href="/" className="text-sm font-medium text-[#8B6FA3] hover:text-[#7B5FA3] transition-colors">
+          <Link href="/" className="text-sm font-medium text-[#8B6FA3] hover:text-[#7B5FA3] transition-colors">
             ← {f.backHome}
-          </a>
+          </Link>
         </div>
       </section>
     </main>
