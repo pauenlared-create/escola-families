@@ -216,7 +216,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-[1.5rem] bg-white shadow-sm">
                 <div className="relative h-64 w-full">
                   <Image
-                    src="/families1-trobada.png"
+                    src="/families1-trobada.webp"
                     alt={t.familiesPlus.s3imgAlt}
                     fill
                     className="object-cover"

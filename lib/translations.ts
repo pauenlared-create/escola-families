@@ -105,7 +105,7 @@ export const translations = {
       ctaContact: "Sol·licita el programa per al teu centre",
       s1imgAlt: "Sessió amb alumnes de 1r d'ESO en cercle",
       s2imgAlt: "Sessió amb famílies assegudes en cercle",
-      s3imgAlt: "Sessió conjunta presencial amb connexió online",
+      s3imgAlt: "Pares, mares i alumnes conversant junts en una sessió conjunta a l'aula",
     },
     projecte: {
       label: "Sobre el projecte",
@@ -296,7 +296,7 @@ export const translations = {
       ctaContact: "Solicita el programa para tu centro",
       s1imgAlt: "Sesión con alumnos de 1º de ESO en círculo",
       s2imgAlt: "Sesión con familias sentadas en círculo",
-      s3imgAlt: "Sesión conjunta presencial con conexión online",
+      s3imgAlt: "Padres, madres y alumnos conversando juntos en una sesión conjunta en el aula",
     },
     projecte: {
       label: "Sobre el proyecto",
