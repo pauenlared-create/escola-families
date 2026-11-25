@@ -133,6 +133,23 @@ export default function RecursosPage() {
         </div>
       </section>
 
+      {/* ── EL LLIBRE ──────────────────────────────────────────────────── */}
+      <section className="bg-white px-6 pb-16">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 rounded-[1.5rem] border border-[#EDE6F3] bg-[#FAF7F2] p-8 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[#8B6FA3]">{r.bookEyebrow}</p>
+            <h2 className="mt-2 text-2xl font-bold">{r.bookTitle}</h2>
+            <p className="mt-3 leading-7 text-[#6B5E72]">{r.bookBody}</p>
+          </div>
+          <Link
+            href="/llibre"
+            className="inline-flex shrink-0 items-center justify-center rounded-full border border-[#7B5FA3] px-6 py-3 font-semibold text-[#7B5FA3] transition-colors hover:bg-[#F1E9F7]"
+          >
+            {r.bookCta}
+          </Link>
+        </div>
+      </section>
+
       {/* ── D'ON SURTEN ────────────────────────────────────────────────── */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl rounded-[2rem] bg-[#7B5FA3] p-10 text-center text-white">

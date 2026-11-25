@@ -12,7 +12,7 @@ export default function SiteHeader({
 }: {
   lang: Lang;
   setLang: (lang: Lang) => void;
-  nav: { familyari: string; familiesPlus: string; recursos: string; projecte: string; contacte: string };
+  nav: { familyari: string; familiesPlus: string; recursos: string; experiencies: string; projecte: string; contacte: string };
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,6 +20,7 @@ export default function SiteHeader({
     { href: "/familyari", label: nav.familyari },
     { href: "/#families-plus", label: nav.familiesPlus },
     { href: "/recursos", label: nav.recursos },
+    { href: "/experiencies", label: nav.experiencies },
     { href: "/#projecte", label: nav.projecte },
     { href: "/#contacte", label: nav.contacte },
   ];
