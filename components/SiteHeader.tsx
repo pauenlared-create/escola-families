@@ -41,9 +41,9 @@ export default function SiteHeader({
       </div>
 
       {/* Desktop nav */}
-      <nav className="hidden items-center gap-6 text-sm font-medium text-[#5F5267] md:flex">
+      <nav className="hidden items-center gap-5 text-sm font-medium text-[#5F5267] lg:flex xl:gap-6">
         {links.map((item) => (
-          <a key={item.href} href={item.href} className="hover:text-[#7B5FA3] transition-colors">
+          <a key={item.href} href={item.href} className="whitespace-nowrap hover:text-[#7B5FA3] transition-colors">
             {item.label}
           </a>
         ))}
@@ -66,7 +66,7 @@ export default function SiteHeader({
       </nav>
 
       {/* Mobile: language + hamburger */}
-      <div className="flex items-center gap-3 md:hidden">
+      <div className="flex items-center gap-3 lg:hidden">
         <div className="flex overflow-hidden rounded-full border border-[#D5C9E0] bg-white text-xs font-semibold">
           <button
             onClick={() => setLang("ca")}
@@ -95,7 +95,7 @@ export default function SiteHeader({
 
       {/* Mobile menu drawer */}
       {menuOpen && (
-        <nav className="absolute inset-x-6 top-full z-20 mt-4 flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-lg text-sm font-medium text-[#5F5267] md:hidden">
+        <nav className="absolute inset-x-6 top-full z-20 mt-4 flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-lg text-sm font-medium text-[#5F5267] lg:hidden">
           {links.map((item) => (
             <a
               key={item.href}
