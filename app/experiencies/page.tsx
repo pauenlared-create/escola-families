@@ -129,7 +129,7 @@ export default function ExperienciesPage() {
               <p className="mx-auto mt-3 max-w-xl leading-7 text-[#6B5E72]">{e.emptyBody}</p>
             </div>
           ) : (
-            <div className="mt-10 grid gap-8 md:grid-cols-2">
+            <div className={`mt-10 grid gap-8 ${experiences.length > 1 ? "md:grid-cols-2" : "max-w-3xl"}`}>
               {experiences.map((exp) => (
                 <article key={exp.id} className="flex flex-col rounded-[1.5rem] bg-[#FAF7F2] p-7 shadow-sm">
                   <div className="flex flex-wrap gap-2">
@@ -144,11 +144,13 @@ export default function ExperienciesPage() {
                     ))}
                   </div>
                   <h3 className="mt-5 text-xl font-bold leading-snug">«{exp.headline}»</h3>
-                  <p className="mt-2 text-sm font-semibold text-[#7B5FA3]">
-                    {exp.school} · {exp.town}
-                  </p>
-                  <p className="text-sm text-[#8B7F91]">
-                    {exp.schoolType} · {exp.stage}
+                  {(exp.school || exp.town) && (
+                    <p className="mt-2 text-sm font-semibold text-[#7B5FA3]">
+                      {[exp.school, exp.town].filter(Boolean).join(" · ")}
+                    </p>
+                  )}
+                  <p className={`text-sm ${exp.school || exp.town ? "text-[#8B7F91]" : "mt-2 font-semibold text-[#7B5FA3]"}`}>
+                    {[exp.schoolType, exp.stage].filter(Boolean).join(" · ")}
                   </p>
                   <div className="mt-4 space-y-4 leading-7 text-[#6B5E72]">
                     {exp.story.split(/\n\s*\n/).map((para, i) => (

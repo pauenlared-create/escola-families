@@ -197,7 +197,7 @@ export const translations = {
     experiencies: {
       eyebrow: "Famílies que canvien escoles",
       title: "Escoles que inspiren",
-      lead: "Experiències reals, explicades per famílies, d'escoles i instituts que atenen bé la diversitat i que fan que les famílies en formin part de veritat.",
+      lead: "Experiències reals, explicades per famílies i docents, d'escoles i instituts que atenen bé la diversitat i que fan que les famílies en formin part de veritat.",
       p1: "Sovint sentim que les coses no poden canviar, que «sempre ha estat així». Però hi ha escoles ordinàries, amb els mateixos recursos que les altres, que s'han organitzat d'una altra manera. Les famílies que ho han viscut són les que millor ho poden explicar.",
       p2: "Aquí recollim aquestes experiències perquè altres famílies, mestres i equips directius hi puguin trobar idees concretes, i perquè sàpiguen que sí que es pot.",
       themeDiversity: "Atenció a la diversitat",
@@ -494,7 +494,7 @@ export const translations = {
     experiencies: {
       eyebrow: "Familias que cambian escuelas",
       title: "Escuelas que inspiran",
-      lead: "Experiencias reales, contadas por familias, de escuelas e institutos que atienden bien la diversidad y que hacen que las familias formen parte de ellos de verdad.",
+      lead: "Experiencias reales, contadas por familias y docentes, de escuelas e institutos que atienden bien la diversidad y que hacen que las familias formen parte de ellos de verdad.",
       p1: "A menudo oímos que las cosas no pueden cambiar, que «siempre ha sido así». Pero hay escuelas ordinarias, con los mismos recursos que las demás, que se han organizado de otra manera. Las familias que lo han vivido son quienes mejor pueden contarlo.",
       p2: "Aquí recogemos esas experiencias para que otras familias, docentes y equipos directivos encuentren ideas concretas, y para que sepan que sí se puede.",
       themeDiversity: "Atención a la diversidad",
