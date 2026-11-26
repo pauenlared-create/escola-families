@@ -257,7 +257,9 @@ export const translations = {
       buyNote: "Edició en paper, en català. T'arriba a casa.",
       soon: "Aviat a la venda",
       soonNote: "El llibre sortirà ben aviat. Si voleu que us avisem, escriviu-nos.",
-      amazon: "També a Amazon",
+      amazon: "També en Kindle",
+      buyKindle: "Comprar a Amazon (Kindle)",
+      kindleNote: "Edició digital per a Kindle. L'edició en paper sortirà ben aviat.",
       whatTitle: "Què hi trobareu",
       cards: [
         {
@@ -554,7 +556,9 @@ export const translations = {
       buyNote: "Edición en papel. Te llega a casa.",
       soon: "Muy pronto a la venta",
       soonNote: "El libro saldrá muy pronto. Si queréis que os avisemos, escribidnos.",
-      amazon: "También en Amazon",
+      amazon: "También en Kindle",
+      buyKindle: "Comprar en Amazon (Kindle)",
+      kindleNote: "Por ahora, edición digital para Kindle en catalán. La edición en papel y la versión en castellano saldrán muy pronto.",
       whatTitle: "Qué encontraréis",
       cards: [
         {

@@ -5,11 +5,12 @@ import SiteHeader from "@/components/SiteHeader";
 import { translations } from "@/lib/translations";
 import { useLang } from "@/lib/useLang";
 
-// Enllaços de compra. Quan el llibre estigui publicat, enganxeu-hi l'enllaç
-// de pagament de Lulu (Direct Checkout) i el de la fitxa d'Amazon.
-// Mentre estiguin buits, la pàgina mostra «Aviat a la venda».
-const LULU_URL = "";
-const AMAZON_URL = "";
+// Enllaços de compra.
+// - LULU_URL: edició en paper (Lulu Direct Checkout). Quan hi sigui, és el botó principal.
+// - KINDLE_URL: edició Kindle a Amazon (de moment només en català).
+// Si tots dos són buits, la pàgina mostra «Aviat a la venda».
+const LULU_URL: string = "";
+const KINDLE_URL: string = "https://www.amazon.es/dp/B0HJRQ81NB";
 
 // Cobertes a /public/llibre-coberta-ca.jpg i /public/llibre-coberta-es.jpg.
 const HAS_COVER = true;
@@ -45,7 +46,10 @@ export default function LlibrePage() {
   const [lang, setLang] = useLang("ca");
   const t = translations[lang];
   const l = t.llibre;
-  const available = LULU_URL !== "";
+  const hasPaper = LULU_URL !== "";
+  const hasKindle = KINDLE_URL !== "";
+  const primaryClass =
+    "inline-flex items-center justify-center rounded-full bg-[#7B5FA3] px-8 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-[#6A4E8F]";
 
   return (
     <main className="min-h-screen bg-[#FAF7F2] text-[#2F2633]">
@@ -69,26 +73,22 @@ export default function LlibrePage() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              {available ? (
-                <a
-                  href={LULU_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-[#7B5FA3] px-8 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-[#6A4E8F]"
-                >
+              {hasPaper ? (
+                <a href={LULU_URL} target="_blank" rel="noopener noreferrer" className={primaryClass}>
                   {l.buy}
                 </a>
+              ) : hasKindle ? (
+                <a href={KINDLE_URL} target="_blank" rel="noopener noreferrer" className={primaryClass}>
+                  {l.buyKindle}
+                </a>
               ) : (
-                <Link
-                  href="/#contacte"
-                  className="inline-flex items-center justify-center rounded-full bg-[#7B5FA3] px-8 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-[#6A4E8F]"
-                >
+                <Link href="/#contacte" className={primaryClass}>
                   {l.soon}
                 </Link>
               )}
-              {AMAZON_URL !== "" && (
+              {hasPaper && hasKindle && (
                 <a
-                  href={AMAZON_URL}
+                  href={KINDLE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-[#D5C9E0] bg-white px-8 py-3 font-semibold text-[#4B3A59] transition-colors hover:bg-[#F8F4FB]"
@@ -97,7 +97,9 @@ export default function LlibrePage() {
                 </a>
               )}
             </div>
-            <p className="mt-3 text-sm text-[#8B7F91]">{available ? l.buyNote : l.soonNote}</p>
+            <p className="mt-3 text-sm text-[#8B7F91]">
+              {hasPaper ? l.buyNote : hasKindle ? l.kindleNote : l.soonNote}
+            </p>
           </div>
 
           <div className="flex justify-center md:justify-end">
