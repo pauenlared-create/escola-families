@@ -6,10 +6,10 @@ import { translations } from "@/lib/translations";
 import { useLang } from "@/lib/useLang";
 
 // Enllaços de compra.
-// - LULU_URL: edició en paper (Lulu Direct Checkout). Quan hi sigui, és el botó principal.
+// - PAPER_URL: edició en paper a Amazon (KDP). Quan hi sigui, és el botó principal.
 // - KINDLE_URL: edició Kindle a Amazon (de moment només en català).
 // Si tots dos són buits, la pàgina mostra «Aviat a la venda».
-const LULU_URL: string = "";
+const PAPER_URL: string = "";
 const KINDLE_URL: string = "https://www.amazon.es/dp/B0HJRQ81NB";
 
 // Cobertes a /public/llibre-coberta-ca.jpg i /public/llibre-coberta-es.jpg.
@@ -46,7 +46,7 @@ export default function LlibrePage() {
   const [lang, setLang] = useLang("ca");
   const t = translations[lang];
   const l = t.llibre;
-  const hasPaper = LULU_URL !== "";
+  const hasPaper = PAPER_URL !== "";
   const hasKindle = KINDLE_URL !== "";
   const primaryClass =
     "inline-flex items-center justify-center rounded-full bg-[#7B5FA3] px-8 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-[#6A4E8F]";
@@ -74,7 +74,7 @@ export default function LlibrePage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               {hasPaper ? (
-                <a href={LULU_URL} target="_blank" rel="noopener noreferrer" className={primaryClass}>
+                <a href={PAPER_URL} target="_blank" rel="noopener noreferrer" className={primaryClass}>
                   {l.buy}
                 </a>
               ) : hasKindle ? (
