@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
       "Amb el permís de l'equip directiu, vam convocar les famílies a una reunió extraordinària. No canviàvem els llibres ni el temari, sinó l'organització de la classe: cada alumne avançaria pel llibre al seu ritme, amb un objectiu ajustat a cadascú, i demanaria fer la prova d'un tema quan cregués que l'havia entès. Unes famílies s'hi van il·lusionar i d'altres van desconfiar. Ho vam parlar obertament i vam quedar de tornar-nos a trobar per valorar com anava.\n\n" +
       "Els primers dies van ser durs: molt de xivarri i alumnes perduts perquè ningú no els deia què havien de fer. Però tenien el llibre, un quadern de solucions, exercicis de reforç i d'ampliació, material manipulatiu i, sobretot, els companys. El mestre deixava de ser la primera opció per convertir-se en un recurs, i podia dedicar temps a qui el necessitava, sovint en petit grup.\n\n" +
       "A final de curs, uns set de cada deu alumnes havien acabat el llibre. Alguns l'havien enllestit al tercer trimestre i van començar continguts d'ESO; d'altres, que odiaven les matemàtiques, les van començar a mirar d'una altra manera. Tots van guanyar autonomia i responsabilitat. I una lliçó per a les famílies: els que més van costar d'adaptar-se no eren els alumnes amb més dificultats, sinó els que estaven acostumats que algú els digués què fer a cada moment.",
-    signature: "Pau Campderrós, mestre de cicle superior. Experiència recollida al llibre Famílies que canvien escoles.",
+    signature: "Mestre de cicle superior. Experiència recollida al llibre Famílies que canvien escoles.",
     date: "2026-11",
   },
 ];

@@ -65,7 +65,7 @@ export default function LlibrePage() {
             </span>
             <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl">{l.title}</h1>
             <p className="mt-3 text-xl font-medium text-[#7B5FA3] md:text-2xl">{l.subtitle}</p>
-            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-[#8B6FA3]">{l.author}</p>
+            {l.author && <p className="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-[#8B6FA3]">{l.author}</p>}
             <p className="mt-6 text-lg leading-8 text-[#6B5E72]">{l.lead}</p>
             <div className="mt-5 space-y-5 text-lg leading-8 text-[#6B5E72]">
               <p>{l.p1}</p>

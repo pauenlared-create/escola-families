@@ -140,7 +140,7 @@ export const translations = {
 
       p10e: "Per això, a Escola de Famílies no busquem donar receptes. Busquem crear les condicions perquè les famílies puguin conversar, comprendre's millor i construir els seus propis acords.",
       h3docent: "El que observem cada dia a les escoles",
-      pDoc1: "Com a docent, he tingut l'oportunitat d'acompanyar infants i adolescents de totes les edats i observar, tant a través de la meva pròpia experiència com de les converses amb molts altres professionals de l'educació, alguns dels reptes que planteja l'ús excessiu de les pantalles i la tecnologia.",
+      pDoc1: "Com a docents, hem tingut l'oportunitat d'acompanyar infants i adolescents de totes les edats i observar, tant a través de la nostra pròpia experiència com de les converses amb molts altres professionals de l'educació, alguns dels reptes que planteja l'ús excessiu de les pantalles i la tecnologia.",
 
       pDoc2: "Cada vegada trobem més infants molt petits amb dificultats de llenguatge, amb poca tolerància a l'espera o amb menys oportunitats d'haver desenvolupat habilitats motrius bàsiques a través del joc, la manipulació i l'exploració de l'entorn.",
 
@@ -191,7 +191,7 @@ export const translations = {
       closingCta: "Vull saber-ne més",
       bookEyebrow: "També us pot interessar",
       bookTitle: "Famílies que canvien escoles",
-      bookBody: "El llibre de Pau Campderrós, fundador d'Escola de Famílies, per a famílies que volen entendre com funciona l'escola per dins i què poden fer perquè tingui en compte cada infant.",
+      bookBody: "Un llibre per a famílies que volen entendre com funciona l'escola per dins i què poden fer perquè tingui en compte cada infant.",
       bookCta: "Coneix el llibre",
     },
     experiencies: {
@@ -239,7 +239,7 @@ export const translations = {
       sentBody: "Hem rebut la vostra experiència. La llegirem amb calma i, si la publiquem, us ho farem saber.",
       error: "No s'ha pogut enviar. Torneu-ho a provar o escriviu-nos a hola@escoladefamilies.cat.",
       bookTitle: "Del llibre a les escoles",
-      bookBody: "Aquesta secció neix del llibre Famílies que canvien escoles, de Pau Campderrós: un llibre perquè les famílies, juntes, ajudin a canviar l'escola.",
+      bookBody: "Aquesta secció neix del llibre Famílies que canvien escoles: un llibre perquè les famílies, juntes, ajudin a canviar l'escola.",
       bookCta: "Coneix el llibre",
       fromBookTitle: "Escoles que inspiren",
       fromBookBody: "Hi ha escoles que ja ho fan. Llegiu experiències de famílies en escoles que atenen bé la diversitat, o expliqueu la vostra.",
@@ -249,7 +249,7 @@ export const translations = {
       eyebrow: "El llibre",
       title: "Famílies que canvien escoles",
       subtitle: "Deixem enrere un sistema que ja no funciona",
-      author: "Pau Campderrós",
+      author: "",
       lead: "Un llibre per a famílies que volen entendre com funciona l'escola per dins i saber què poden fer perquè tingui en compte cada infant.",
       p1: "«El nivell és molt baix», «el meu fill s'avorreix a classe», «sempre ha estat així». Són frases que se senten cada dia a la porta de l'escola. Cada capítol en parteix d'una per explicar què hi ha al darrere, i com seria una escola organitzada perquè cada alumne avanci al seu ritme: tant els que van més ràpid com els que necessiten més temps.",
       p2: "No és un llibre contra l'escola ni contra els mestres. És un llibre perquè les famílies, juntes, ajudin a canviar-la.",
@@ -289,7 +289,7 @@ export const translations = {
         "«Això és molt idealista»",
       ],
       authorTitle: "L'autor",
-      authorBody: "Pau Campderrós és mestre i pare de dues filles. Fa uns vint anys que es dedica a l'educació i ha treballat en més de quinze escoles i instituts públics, concertats i privats, com a tutor, especialista i cap d'estudis. És membre del consell escolar de l'escola de les seves filles i impulsa Escola de Famílies.",
+      authorBody: "És mestre i pare de dues filles. Fa uns vint anys que es dedica a l'educació i ha treballat en més de quinze escoles i instituts públics, concertats i privats, com a tutor, especialista i cap d'estudis. És membre del consell escolar de l'escola de les seves filles i impulsa Escola de Famílies.",
       closingTitle: "Parlem-ne a la vostra escola",
       closingBody: "Si sou una AFA o una escola i voleu organitzar una xerrada amb les famílies a partir del llibre, escriviu-nos.",
       closingCta: "Contacta'ns",
@@ -419,7 +419,7 @@ export const translations = {
 
       h3docent: "Lo que observamos cada día en las escuelas",
 
-      pDoc1: "Como docente, he tenido la oportunidad de acompañar a niños, niñas y adolescentes de todas las edades y observar, tanto a través de mi propia experiencia como de las conversaciones con muchos otros profesionales de la educación, algunos de los retos que plantea el uso excesivo de las pantallas y la tecnología.",
+      pDoc1: "Como docentes, hemos tenido la oportunidad de acompañar a niños, niñas y adolescentes de todas las edades y observar, tanto a través de nuestra propia experiencia como de las conversaciones con muchos otros profesionales de la educación, algunos de los retos que plantea el uso excesivo de las pantallas y la tecnología.",
 
       pDoc2: "Cada vez encontramos más niños y niñas muy pequeños con dificultades de lenguaje, con poca tolerancia a la espera o con menos oportunidades de haber desarrollado habilidades motrices básicas a través del juego, la manipulación y la exploración de su entorno.",
 
@@ -490,7 +490,7 @@ export const translations = {
       closingCta: "Quiero saber más",
       bookEyebrow: "También os puede interesar",
       bookTitle: "Familias que cambian escuelas",
-      bookBody: "El libro de Pau Campderrós, fundador de Escola de Famílies, para familias que quieren entender cómo funciona la escuela por dentro y qué pueden hacer para que tenga en cuenta a cada niño y cada niña.",
+      bookBody: "Un libro para familias que quieren entender cómo funciona la escuela por dentro y qué pueden hacer para que tenga en cuenta a cada niño y cada niña.",
       bookCta: "Conoce el libro",
     },
     experiencies: {
@@ -538,7 +538,7 @@ export const translations = {
       sentBody: "Hemos recibido vuestra experiencia. La leeremos con calma y, si la publicamos, os lo haremos saber.",
       error: "No se ha podido enviar. Volved a intentarlo o escribidnos a hola@escoladefamilies.cat.",
       bookTitle: "Del libro a las escuelas",
-      bookBody: "Esta sección nace del libro Familias que cambian escuelas, de Pau Campderrós: un libro para que las familias, juntas, ayuden a cambiar la escuela.",
+      bookBody: "Esta sección nace del libro Familias que cambian escuelas: un libro para que las familias, juntas, ayuden a cambiar la escuela.",
       bookCta: "Conoce el libro",
       fromBookTitle: "Escuelas que inspiran",
       fromBookBody: "Hay escuelas que ya lo hacen. Leed experiencias de familias en escuelas que atienden bien la diversidad, o contad la vuestra.",
@@ -548,7 +548,7 @@ export const translations = {
       eyebrow: "El libro",
       title: "Familias que cambian escuelas",
       subtitle: "Dejemos atrás un sistema que ya no funciona",
-      author: "Pau Campderrós",
+      author: "",
       lead: "Un libro para familias que quieren entender cómo funciona la escuela por dentro y saber qué pueden hacer para que tenga en cuenta a cada niño y cada niña.",
       p1: "«El nivel es muy bajo», «mi hijo se aburre en clase», «siempre ha sido así». Son frases que se oyen cada día en la puerta del colegio. Cada capítulo parte de una para explicar qué hay detrás, y cómo sería una escuela organizada para que cada alumno avance a su ritmo: tanto los que van más rápido como los que necesitan más tiempo.",
       p2: "No es un libro contra la escuela ni contra los maestros. Es un libro para que las familias, juntas, ayuden a cambiarla.",
@@ -588,7 +588,7 @@ export const translations = {
         "«Esto es muy idealista»",
       ],
       authorTitle: "El autor",
-      authorBody: "Pau Campderrós es maestro y padre de dos hijas. Lleva unos veinte años dedicado a la educación y ha trabajado en más de quince escuelas e institutos públicos, concertados y privados, como tutor, especialista y jefe de estudios. Es miembro del consejo escolar de la escuela de sus hijas e impulsa Escola de Famílies.",
+      authorBody: "Es maestro y padre de dos hijas. Lleva unos veinte años dedicado a la educación y ha trabajado en más de quince escuelas e institutos públicos, concertados y privados, como tutor, especialista y jefe de estudios. Es miembro del consejo escolar de la escuela de sus hijas e impulsa Escola de Famílies.",
       closingTitle: "Hablemos en vuestra escuela",
       closingBody: "Si sois un AFA o una escuela y queréis organizar una charla con las familias a partir del libro, escribidnos.",
       closingCta: "Contáctanos",
